@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "solemate",
+    "slug": "solemate",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "solemate"
+}
