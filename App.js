@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import MainDisplay from './Components/MainDisplay';
 
 export default function App() {
   const [displayedShoes, setDisplayedShoes] = useState([]);
@@ -13,6 +14,7 @@ export default function App() {
     <View style={styles.container}>
       <Text>Open up App.js to start working on your app!</Text>
       <StatusBar style="auto" />
+      <MainDisplay />
     </View>
   );
 }
