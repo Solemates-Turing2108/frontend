@@ -2,7 +2,7 @@ import React from "react";
 import { Text } from 'react-native';
 
 export default function MainDisplay() {
-  console.log();
+  const [shoeData, setShoeData] = useState([]);
   return (
   <>
     <Text>Dog Blog</Text>
