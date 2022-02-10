@@ -5,18 +5,7 @@ import MainDisplay from './Components/MainDisplay';
 import APIService from './Services/apiService';
 
 export default function App() {
-  const apiServiceRef = useRef();
-  let apiService = null;
   const [displayedShoes, setDisplayedShoes] = useState([]);
-
-  useEffect(() => {
-    createNewApiService();
-  }, []);
-
-  const createNewApiService = () => {
-    apiServiceRef.current = new APIService();
-    apiService = apiServiceRef.current;
-  };
 
   const updateDisplayedShoes = (newShoeData) => {
     setDisplayedShoes(newShoeData);
