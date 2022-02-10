@@ -1,12 +1,8 @@
 import { returnValidShoes } from "../TestData/validData";
 
-export default class APIService {
-  constructor() {
-    this.baseURL = '';
-  }
+const getAllShoes = async () => {
+  const allShoes = await returnValidShoes();
+  return allShoes;
+};
 
-  async getAllShoes () {
-    const allShoes = await returnValidShoes();
-    return allShoes;
-  }
-}
+export { getAllShoes } 
