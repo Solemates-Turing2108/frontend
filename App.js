@@ -5,17 +5,11 @@ import MainDisplay from './Components/MainDisplay';
 import APIService from './Services/apiService';
 
 export default function App() {
-  const [displayedShoes, setDisplayedShoes] = useState([]);
-
-  const updateDisplayedShoes = (newShoeData) => {
-    setDisplayedShoes(newShoeData);
-  }
-
   return (
     <View style={styles.container}>
       <Text>Open up App.js to start working on your app!</Text>
       <StatusBar style="auto" />
-      <MainDisplay displayedShoes={displayedShoes}/>
+      <MainDisplay />
     </View>
   );
 }
