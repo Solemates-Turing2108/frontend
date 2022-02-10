@@ -4,7 +4,7 @@ import { Text } from 'react-native-web';
 export default function ShoeCard({ shoeData }) {
   return (
     <Text>
-      {shoeData.description}
+      {shoeData ? shoeData.description : 'Nothing Here'}
     </Text>
   )
 }
