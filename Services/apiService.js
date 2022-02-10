@@ -5,4 +5,4 @@ const getAllShoes = async () => {
   return allShoes;
 };
 
-export default { getAllShoes } 
+export { getAllShoes } 
